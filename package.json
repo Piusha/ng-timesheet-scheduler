@@ -1,0 +1,9 @@
+{
+  "name": "diveargnet",
+  "version": "1.0.0",
+  "description": "Diveargent resource planing template",
+  "main": "index.js",
+  "scripts": {},
+  "author": " <piushakalyana@gmail.com>",
+  "license": "ISC"
+}
