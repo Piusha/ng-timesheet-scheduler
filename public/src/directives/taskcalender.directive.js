@@ -24,7 +24,6 @@
             templateUrl:'/public/app/templates/taskCalender.dir.html',
             link:function(scope, element, attr){
 
-                console.log(taskSchedulerTimeService.monthDistribution('2016-11-01','2017-03-20'));
 
                 var CalenderDate = {
                     getDayName:function(start_date,end_date){
