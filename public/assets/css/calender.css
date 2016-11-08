@@ -1,0 +1,33 @@
+.column-header{
+
+}
+
+.data-row{
+
+}
+.table-cell{
+
+}
+.cell-content-wrapper{
+    width:20px;
+    height: 40px;
+}
+.calender-line-title{}
+.calender-header{}
+.row-title{
+    width: 215px;
+}
+
+.sat {
+    background-color: #d6e9c6;
+}
+.sun {
+    background-color: #c9aa5f;
+}
+.data-content{
+    resize:horizontal;
+    overflow: auto;
+    background-color:#0044cc;
+    width:20px;
+    height: 20px;
+}

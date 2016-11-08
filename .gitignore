@@ -1,4 +1,5 @@
-*/*.DS_Store
+**/.DS_Store
 node_modules/
 .idea/
-app/
+public/app
+public/vendor

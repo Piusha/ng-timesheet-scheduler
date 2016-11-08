@@ -1,0 +1,55 @@
+<div class="cal-wrapper">
+
+
+    <table class="cal-tbl-wrapper" border="1">
+        <thead>
+            <tr class="column-header">
+                <td>
+                    <div class="calender-header row-title">{{calender_header.row_title}}</div>
+
+                </td>
+                <td ng-repeat="weekdates in calender_dates">
+
+                    <table class="cal-week-days" border="1">
+                        <tr>
+                            <td ng-repeat="days in weekdates" class="table-cell"
+                                ng-class="{
+                                'sat': days.day_name === 'Sat',
+                                'sun': days.day_name === 'Sun'}">
+                                <div class="cell-content-wrapper">{{days.day_name}}</div></td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </thead>
+
+        <tbody id="calender_row_body">
+            <tr class="data-row" ng-repeat="row_data in calenderRowData">
+                <td>
+                    <div class="calender-line-title row-title">{{row_data.row_title}}</div>
+
+                </td>
+                <td ng-repeat="weekdates in calender_dates" >
+
+                    <table class="cal-week-days" border="1">
+                        <tr>
+                            <td ng-repeat="days in weekdates" class="table-cell drag-me" ng-class="{
+                                'sat': days.day_name === 'Sat',
+                                'sun': days.day_name === 'Sun'}">
+                                <div class="cell-content-wrapper" id="row_{{row_data.row_id}}_{{days.year}}_{{days.month.toLowerCase()}}_{{days.date}}">
+
+
+                                    <div class="data-content" ng-if="days.date == 2"></div>
+                                </div> </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>

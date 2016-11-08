@@ -1,0 +1,29 @@
+{
+  "name": "diveargnet",
+  "description": "",
+  "main": "",
+  "authors": [
+    "piusha <piushakalyana@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-bootstrap": "^2.2.0",
+    "bootstrap": "^3.3.6",
+    "bootstrap-datepicker": "^1.6.4",
+    "bootstrap-progressbar": "^0.9.0",
+    "jquery": "^2.2.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-sortable": "^0.9.13"
+  }
+}
