@@ -6,7 +6,7 @@
 	app.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider){
 		$routeProvider.
 			when('/',{
-				templateUrl:"/public/app/templates/index.tmpl.html"
+				templateUrl:"public/app/templates/index.tmpl.html"
 			});
 
 		if(window.history && window.history.pushState){

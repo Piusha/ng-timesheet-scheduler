@@ -21,7 +21,7 @@
             scope:{
                 calenderRowData:"="
             },
-            templateUrl:'/public/app/templates/taskCalender.dir.html',
+            templateUrl:'public/app/templates/taskCalender.dir.html',
             link:function(scope, element, attr){
 
 
