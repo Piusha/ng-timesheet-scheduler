@@ -1,12 +1,27 @@
-.column-header{
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
 
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+.column-header,
+.column-content{
+    background-color: white;
 }
 
 .data-row{
 
 }
 .table-cell{
-
+    border: 1px solid #d5d5d5;
 }
 .cell-content-wrapper{
     width:20px;
@@ -16,6 +31,8 @@
 .calender-header{}
 .row-title{
     width: 215px;
+    text-align: left;
+    padding-left: 10px;
 }
 
 .sat {
@@ -31,3 +48,39 @@
     width:20px;
     height: 20px;
 }
+
+.month-heading {
+    text-align: center;
+}
+.month-heading span{
+    font-weight: 600;
+}
+
+/************************************************************************/
+
+.month-grid-wrapper{
+    display: block;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+.month-grid-cell{
+    float: left;
+
+}
+.month-grid{
+    width: 435px;
+    height: 60px;
+    background: #ffffff;
+    margin: 1px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid;
+}
+.month-grid-wrapper .month-grid-cell span{
+
+}
+
+.week-grid-wrapper{}
+.week-grid{}
+.week-grid-cell{}

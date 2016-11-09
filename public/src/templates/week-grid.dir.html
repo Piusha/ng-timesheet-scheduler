@@ -1,0 +1,11 @@
+<div class="week-grid-wrapper clearfix">
+
+    <div class="week-grid week-grid-cell" ng-repeat="days in week_gird_date"  ng-class="{
+                                'sat': days.day_name === 'Sat',
+                                'sun': days.day_name === 'Sun'}" >
+
+        <span>{{days.day_name}} / {{days.date}}</span>
+    </div>
+
+
+</div>

@@ -9,7 +9,7 @@
     var DirApp = angular.module('Diveargnet');
     var directiveId = 'taskCalender',
         directiveData = 'taskCalenderData';
-    DirApp.directive(directiveId,['taskSchedulerTimeService',directiveFunction]);
+    DirApp.directive(directiveId,['taskSchedulerDateService',directiveFunction]);
 
 
 
