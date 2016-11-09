@@ -22,7 +22,10 @@
             link:function(scope, element, attr){
                var _tmp = SchedulerDateService.getGridDates('10/24/2016','5/30/2017');
                 console.log(_tmp);
+
                 scope.month_gird_date = _tmp;
+                scope.lineItems = SchedulerDateService.prepareItemModel(scope.itemModel);
+                console.log(scope.lineItems);
 
             }
 

@@ -33,7 +33,7 @@
         </thead>
 
         <tbody>
-            <tr ng-repeat="item in itemModel.items" class="column-content">
+            <tr ng-repeat="item in lineItems.items" class="column-content">
                 <td>
                     <div class="calender-header row-title">{{item.title}}</div>
                 </td>
@@ -50,11 +50,8 @@
                                     <div class="cell-content-wrapper" >
 
                                         <div class="cell-data data-content" ng-repeat="item_date in item.dates"
-                                             ng-if="item_date.start  == grid_dates.full_date "
-
-                                             id="{{item_date.start}}"
-                                             t="{{grid_dates.full_date}}"   >
-                                                A
+                                             ng-if="item_date.full_date_index  == grid_dates.full_date_index"
+                                              ng-style="{'width':item_date.element_length+'px' }">
                                         </div>
 
                                     </div>

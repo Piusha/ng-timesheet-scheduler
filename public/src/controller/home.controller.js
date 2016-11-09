@@ -64,6 +64,16 @@
 							description:'Line 4 Description 1000'
 						}
 					]
+				},
+				{
+					title:'Line 5',
+					dates:[
+						{
+							start:SchedulerDateService.convertToDate('01/01/2017'),
+							end:SchedulerDateService.convertToDate('02/01/2017'),
+							description:'Line 5 Description 1000'
+						}
+					]
 				}
 			]
 		};
