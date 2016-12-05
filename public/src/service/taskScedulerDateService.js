@@ -97,6 +97,7 @@
                 for(var a =0; a < item_model.items.length ;a++){
                     var _tmp_item = {
                         title:item_model.items[a].title,
+                        item_index:"line_"+a,
                         dates:[]
                     };
                     for(var d=0; d < item_model.items[a].dates.length ; d++){

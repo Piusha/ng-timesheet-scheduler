@@ -33,7 +33,7 @@
         </thead>
 
         <tbody>
-            <tr ng-repeat="item in lineItems.items" class="column-content">
+            <tr ng-repeat="item in lineItems.items track by $index" class="column-content">
                 <td>
                     <div class="calender-header row-title">{{item.title}}</div>
                 </td>
@@ -43,10 +43,12 @@
 
                         <table>
                             <tr >
-                                <td ng-repeat="grid_dates in month_gird_date.grid_dates[grid_months.date_index]" class="table-cell drag-me"
+                                <td ng-repeat="grid_dates in month_gird_date.grid_dates[grid_months.date_index] " class="table-cell drag-me"
                                     ng-class="{
                                     'sat': grid_dates.day_name === 'Sat',
-                                    'sun': grid_dates.day_name === 'Sun'}">
+                                    'sun': grid_dates.day_name === 'Sun'}"
+                                    data-current-cellid="{{ item.item_index }}_{{ grid_dates.full_date_index }}"
+                                        >
                                     <div class="cell-content-wrapper" >
 
                                         <div class="cell-data data-content" ng-repeat="item_date in item.dates"
@@ -65,4 +67,8 @@
         </tbody>
 
     </table>
+
+
 </div>
+
+<div class="output">OUT PUT<br/>{{ dropped_id }}</div>

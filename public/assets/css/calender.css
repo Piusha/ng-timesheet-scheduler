@@ -24,8 +24,10 @@
     border: 0px solid #d5d5d5;
 }
 .cell-content-wrapper{
-    width:20px;
-    height: 40px;
+    width:19px;
+    height: 39px;
+
+    margin:1px
 }
 .calender-line-title{}
 .calender-header{}
@@ -49,8 +51,8 @@
     z-index: 100;
     display: inline-block;
     margin-top: 5px;
-    border-radius: 8px;
-    border: 2px solid #949191;
+    border-radius: 2px;
+    border: 1px solid #949191;
 }
 
 .month-heading {
